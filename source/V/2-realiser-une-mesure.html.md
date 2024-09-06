@@ -74,7 +74,7 @@ Et en effet, elle a un problème : `ma_somme -10` bouclerait à l’infini. On p
 par une inégalité et en ajoutant une condition à la mesure.
 
 ```ocaml
-let ma_somme x =
+let rec ma_somme x =
   if x <= -3 then
     0
   else
